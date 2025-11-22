@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Babylon Infinite Terrain - FPS Camera</title>
+  <style>
+    html, body { width:100%; height:100%; margin:0; overflow:hidden; }
+    #renderCanvas { width:100%; height:100%; touch-action:none; display:block; }
+    #info { position: absolute; left: 12px; top: 12px; color: white; font-family: Arial; background: rgba(0,0,0,0.25); padding: 6px 10px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <div id="info">Click to lock pointer. WASD to move. Space = jump.</div>
+  <canvas id="renderCanvas"></canvas>
+  <script src="https://cdn.babylonjs.com/babylon.js"></script>
+  <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
