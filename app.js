@@ -289,6 +289,11 @@
   // Example: place your GitHub raw link here (commented out). Replace with your link or call from console.
   // loadTerrainFromURL('https://raw.githubusercontent.com/USER/REPO/branch/path/to/terrain.glb').catch(console.error);
 
+  // Auto-load the terrain from the GitHub link provided by the user (will be converted to raw URL)
+  loadTerrainFromURL('https://github.com/VAISHNAV-RAVINDRAN/terrain/blob/main/death_valley_-_terrain.glb').catch(function(err){
+    console.error('Terrain load failed:', err);
+  });
+
   // Simple UI: show pointerlock status
   document.addEventListener('pointerlockchange', function(){
     const locked = document.pointerLockElement === canvas;
